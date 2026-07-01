@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>whoami // sc0d3r</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="about">
+
+<div id="scene-container" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="section page">
+  <a href="index.html" class="back-link">&larr; sc0d3r</a>
+  <p class="addr">0x01 :: WHOAMI</p>
+  <h1 class="page-title">About</h1>
+
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        I'm a CYBERSECURITY student and the tech head of MRU-CYBERSQUAD, my university's cybersecurity club at Manav Rachna
+        University. Most of my time goes into breaking things on purpose — designing CTF challenges,
+        chasing bugs in production apps, and pulling apart binaries until they tell me what they're
+        actually doing.
+      </p>
+      <p>
+        My strongest ground is web exploitation and forensics — auth bypasses, JWT forgery, IDOR chains,
+        format string bugs, and the small logic gaps that turn into full account takeovers. I've also
+        run an unauthorized penetration test on a university EMS platform, surfacing path traversal and
+        unauthenticated PII exposure through sync endpoints.
+      </p>
+      <p>
+        Outside of CTFs, I build the infrastructure around security — an AI mentor chatbot with
+        TOTP-based auth for my university, Most of The time i use AI(llm)For Coding but i understand the code but i just dont know how to Code Properly.
+      </p>
+    </div>
+    <aside class="about-stack">
+      <img class="about-picture" src="picture.png" alt="Suraj portrait" />
+    </aside>
+  </div>
+  <a href="index.html" class="page-corner-logo" aria-label="Back to home">
+    <img src="hero-graphic.png" alt="" />
+  </a>
+</main>
+
+<nav class="dock" role="navigation" aria-label="Section navigation">
+  <ul class="dock-list">
+    <li class="dock-item" data-target="home"><a href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10L12 4L20 10V19C20 19.5523 19.5523 20 19 20H14V14H10V20H5C4.44772 20 4 19.5523 4 19V10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">home</span></li>
+    <li class="dock-item" data-target="about"><a href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L20 6M4 12H14M4 18H10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18 14L20 16L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">whoami</span></li>
+    <li class="dock-item" data-target="writeups"><a href="writeups.html" aria-label="Writeups"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H16L20 8V20H4V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 4V8H20" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 12H16M8 16H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a><span class="dock-label">loot</span></li>
+    <li class="dock-item" data-target="bbp"><a href="bbp.html" aria-label="Bug Bounty Programs"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 12L11 13.5L14.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">bbp</span></li>
+    <li class="dock-item" data-target="tools"><a href="tools.html" aria-label="Tools"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 005.4-5.4l-2.1 2.1-2-2 2.1-2.1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a><span class="dock-label">tools</span></li>
+    <li class="dock-item" data-target="notes"><a href="notes.html" aria-label="Notes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 19L9 18L18.5 8.5C19.3284 7.67157 19.3284 6.32843 18.5 5.5C17.6716 4.67157 16.3284 4.67157 15.5 5.5L6 15L5 19Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">notes</span></li>
+    <li class="dock-item" data-target="contact"><a href="contact.html" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">connect</span></li>
+  </ul>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

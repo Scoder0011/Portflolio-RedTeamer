@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact // sc0d3r</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Scoped micro-interactions to preserve clean layouts and interactive scaling */
+    .op-card-link {
+      text-decoration: none;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, border-color 0.2s ease;
+    }
+    .op-card-link:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.03) !important;
+      border-color: rgba(255, 0, 0, 0.3) !important;
+    }
+    .op-card-link:hover svg {
+      color: var(--red) !important;
+      transform: translate(1px, -1px);
+    }
+    .op-card-link svg {
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+    .pgp-details[open] summary {
+      color: var(--red);
+    }
+  </style>
+</head>
+<body data-page="contact">
+
+<div id="scene-container" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="section page">
+  <a href="index.html" class="back-link">&larr; sc0d3r</a>
+  <p class="addr">0x06 :: CONNECT</p>
+  <h1 class="page-title">Contact</h1>
+  <p class="page-note">Initiate secure links for target engagements, engineering initiatives, or protocol briefings.</p>
+
+  <section class="operator-status" style="margin-top: 2rem;">
+    <p class="wu-col-label" style="font-family: 'JetBrains Mono', monospace; margin-bottom: 0.75rem;">// OPERATOR STATUS</p>
+    <div class="tool-card" style="border-left: 2px solid #10b981; padding: 1.5rem; background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(4px); display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; align-items: center;">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem;">
+          <span style="width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulse 2s infinite;" aria-hidden="true"></span>
+          <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; color: #fff;">Available For Assignments</h3>
+        </div>
+        <ul style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.4rem; padding-left: 0; list-style: none; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; margin: 0; opacity: 0.8;">
+          <li><span style="color: #10b981;">&bull;</span> CTF Operations</li>
+          <li><span style="color: #10b981;">&bull;</span> Security Research</li>
+          <li><span style="color: #10b981;">&bull;</span> Open Source Collabs</li>
+          <li><span style="color: #10b981;">&bull;</span> Student Initiatives</li>
+        </ul>
+      </div>
+      <div style="border-left: 1px solid rgba(255, 255, 255, 0.05); padding-left: 2rem; min-width: 180px;">
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; margin: 0; opacity: 0.5; text-transform: uppercase;">Expected Latency</p>
+        <p style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 600; margin: 0; color: #fff;">Within 24 Hours</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wu-columns" style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+    
+    <section class="wu-col">
+      <p class="wu-col-label" style="font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem;">// COMM CHANNELS</p>
+      <div class="wu-list" style="display: flex; flex-direction: column; gap: 0.75rem;">
+        
+        <a href="mailto:hello@sc0d3r.dev" class="tool-card op-card-link" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.25rem; background: rgba(255,255,255,0.015); border: 1px solid rgba(255,255,255,0.05);">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; opacity: 0.7;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <div>
+              <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 600; color: #fff;">Email</p>
+              <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; opacity: 0.5;">scoder0011@gmail.com</p>
+            </div>
+          </div>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px; opacity: 0.5;"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <a href="https://github.com/Scoder0011" target="_blank" rel="noopener noreferrer" class="tool-card op-card-link" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.25rem; background: rgba(255,255,255,0.015); border: 1px solid rgba(255,255,255,0.05);">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; opacity: 0.7;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 600; color: #fff;">GitHub</p>
+              <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; opacity: 0.5;">github.com/scoder0011</p>
+            </div>
+          </div>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px; opacity: 0.5;"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/scoder0011/" target="_blank" rel="noopener noreferrer" class="tool-card op-card-link" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.25rem; background: rgba(255,255,255,0.015); border: 1px solid rgba(255,255,255,0.05);">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; opacity: 0.7;"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12ZM5.5 9.5h2.88V18H5.5V9.5Zm4.8 0h2.76v1.16h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.91 3.44 4.39V18H16.3v-7.4c0-1.76-.03-4.03-2.46-4.03-2.46 0-2.84 1.92-2.84 3.9V18H10.3V9.5Z"/></svg>
+            <div>
+              <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 600; color: #fff;">LinkedIn</p>
+              <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; opacity: 0.5;">linkedin/scoder0011</p>
+            </div>
+          </div>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px; opacity: 0.5;"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+
+        <div class="tool-card" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.25rem; background: rgba(255,255,255,0.015); border: 1px solid rgba(255,255,255,0.05);">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; opacity: 0.7;"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <div>
+              <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 600; color: #fff;">Discord</p>
+              <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; opacity: 0.5;">scoder0011</p>
+            </div>
+          </div>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; opacity: 0.3; text-transform: uppercase;">Direct</span>
+        </div>
+        
+
+      </div>
+    </section>
+  </div>
+
+  <section class="availability-matrix" style="margin-top: 3rem;">
+    <p class="wu-col-label" style="font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem;">// IDENTITY PARAMETERS</p>
+    <div class="vault-card" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; padding: 2rem; border: 1px solid rgba(255,255,255,0.06); background: rgba(0,0,0,0.15);">
+      
+      <div>
+        <h4 style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--red); margin: 0 0 0.5rem 0; text-transform: uppercase;">Location</h4>
+        <p style="font-family: 'Space Grotesk', sans-serif; margin: 0; font-size: 1.1rem; font-weight: 500; color: #fff;">India</p>
+      </div>
+
+      <div>
+        <h4 style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--red); margin: 0 0 0.5rem 0; text-transform: uppercase;">Occupation</h4>
+        <p style="font-family: 'Space Grotesk', sans-serif; margin: 0; font-size: 1.1rem; font-weight: 500; color: #fff;">Computer Science Student</p>
+      </div>
+
+      <div>
+        <h4 style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--red); margin: 0 0 0.5rem 0; text-transform: uppercase;">Active Research</h4>
+        <p style="font-family: 'JetBrains Mono', monospace; margin: 0; font-size: 0.85rem; line-height: 1.5; color: #ccc;">
+          Red Teaming<br>Web Security<br>Reverse Engineering
+        </p>
+      </div>
+
+      <div>
+        <h4 style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--red); margin: 0 0 0.5rem 0; text-transform: uppercase;">Open To</h4>
+        <p style="font-family: 'JetBrains Mono', monospace; margin: 0; font-size: 0.85rem; line-height: 1.5; color: #ccc;">
+          Internships<br>Vulnerability Research<br>CTF & Hackathons
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="pgp-vault" style="margin-top: 1.5rem;">
+    <details class="pgp-details" style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 4px; padding: 0.75rem 1.25rem;">
+      <summary style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; cursor: pointer; outline: none; user-select: none; color: #aaa;">
+        [+] View PGP Fingerprint (Encrypted Comms)
+      </summary>
+      <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p class="pgp-key" style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--red); word-spacing: 4px; margin: 0; background: rgba(0,0,0,0.2); padding: 0.75rem; border-radius: 2px;">
+          E3B0 C442 98FC 1C14 9AFB &nbsp; F4C8 996F B924 27AE 41E4
+        </p>
+      </div>
+    </details>
+  </section>
+
+  <p class="footer-note" style="margin-top: 4rem; opacity: 0.4; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; line-height: 1.6; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 1.5rem;">
+    Designed & developed by Suraj.<br>
+    Built with vanilla HTML, CSS & JavaScript — No templates, no frameworks. Just raw syntax. 2026.
+  </p>
+  <a href="index.html" class="page-corner-logo" aria-label="Back to home">
+    <img src="hero-graphic.png" alt="" />
+  </a>
+</main>
+
+<nav class="dock" role="navigation" aria-label="Section navigation">
+  <ul class="dock-list">
+    <li class="dock-item" data-target="home"><a href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10L12 4L20 10V19C20 19.5523 19.5523 20 19 20H14V14H10V20H5C4.44772 20 4 19.5523 4 19V10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">home</span></li>
+    <li class="dock-item" data-target="about"><a href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L20 6M4 12H14M4 18H10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18 14L20 16L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">whoami</span></li>
+    <li class="dock-item" data-target="writeups"><a href="writeups.html" aria-label="Writeups"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H16L20 8V20H4V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 4V8H20" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 12H16M8 16H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a><span class="dock-label">loot</span></li>
+    <li class="dock-item" data-target="bbp"><a href="bbp.html" aria-label="Bug Bounty Programs"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 12L11 13.5L14.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">bbp</span></li>
+    <li class="dock-item" data-target="tools"><a href="tools.html" aria-label="Tools"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 005.4-5.4l-2.1 2.1-2-2 2.1-2.1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a><span class="dock-label">tools</span></li>
+    <li class="dock-item" data-target="notes"><a href="notes.html" aria-label="Notes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 19L9 18L18.5 8.5C19.3284 7.67157 19.3284 6.32843 18.5 5.5C17.6716 4.67157 16.3284 4.67157 15.5 5.5L6 15L5 19Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">notes</span></li>
+    <li class="dock-item" data-target="contact"><a href="contact.html" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">connect</span></li>
+  </ul>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

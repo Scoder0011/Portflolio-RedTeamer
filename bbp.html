@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bbp // sc0d3r</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="bbp">
+
+<div id="scene-container" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="section page">
+  <a href="index.html" class="back-link">&larr; sc0d3r</a>
+  <p class="addr">0x03 :: BBP</p>
+  <h1 class="page-title">Bug Bounty Programs</h1>
+  <p class="page-note">Active on HackerOne , Bugcrowd and Intigriti under <code>s_coder</code>. Recon-first, BurpSuite-heavy, iterative.</p>
+
+  <div class="bbp-list">
+    <article class="bbp-row">
+      <div class="bbp-head">
+        <h3>WisdomTree</h3>
+        <span class="bbp-status status-dup">duplicate</span>
+      </div>
+      <p class="bbp-meta">Django · Cloudflare · fintech</p>
+      <p>First report was a username enumeration issue on the login flow — closed as duplicate, but confirmed the target rewards timing and response-based enumeration bugs.</p>
+    </article>
+
+    <article class="bbp-row">
+      <div class="bbp-head">
+        <h3>S-Pankki</h3>
+        <span class="bbp-status status-progress">recon</span>
+      </div>
+      <p class="bbp-meta">banking · subdomain enumeration</p>
+      <p>Mapping the subdomain surface for exposed panels, stale DNS records, and forgotten staging environments.</p>
+    </article>
+  </div>
+
+  <p class="page-note" style="margin-top:40px;">Reports are shared privately with program owners. Full technical writeups go up here once a program's disclosure policy allows it.</p>
+  <a href="index.html" class="page-corner-logo" aria-label="Back to home">
+    <img src="hero-graphic.png" alt="" />
+  </a>
+</main>
+
+<nav class="dock" role="navigation" aria-label="Section navigation">
+  <ul class="dock-list">
+    <li class="dock-item" data-target="home"><a href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10L12 4L20 10V19C20 19.5523 19.5523 20 19 20H14V14H10V20H5C4.44772 20 4 19.5523 4 19V10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">home</span></li>
+    <li class="dock-item" data-target="about"><a href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L20 6M4 12H14M4 18H10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18 14L20 16L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">whoami</span></li>
+    <li class="dock-item" data-target="writeups"><a href="writeups.html" aria-label="Writeups"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H16L20 8V20H4V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 4V8H20" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 12H16M8 16H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a><span class="dock-label">loot</span></li>
+    <li class="dock-item" data-target="bbp"><a href="bbp.html" aria-label="Bug Bounty Programs"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 12L11 13.5L14.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">bbp</span></li>
+    <li class="dock-item" data-target="tools"><a href="tools.html" aria-label="Tools"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 005.4-5.4l-2.1 2.1-2-2 2.1-2.1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a><span class="dock-label">tools</span></li>
+    <li class="dock-item" data-target="notes"><a href="notes.html" aria-label="Notes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 19L9 18L18.5 8.5C19.3284 7.67157 19.3284 6.32843 18.5 5.5C17.6716 4.67157 16.3284 4.67157 15.5 5.5L6 15L5 19Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">notes</span></li>
+    <li class="dock-item" data-target="contact"><a href="contact.html" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">connect</span></li>
+  </ul>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

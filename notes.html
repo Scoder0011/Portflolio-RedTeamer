@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>notes // sc0d3r</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="notes">
+
+<div id="scene-container" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="section page">
+  <a href="index.html" class="back-link">&larr; sc0d3r</a>
+  <p class="addr">0x05 :: NOTES</p>
+  <h1 class="page-title">Notes</h1>
+  <p class="page-note">Unfiltered repository of my active research, capture-the-flag logs, and offensive security playbooks.</p>
+
+  <section class="focus-section" style="margin-top: 2rem;">
+    <p class="wu-col-label" style="color: var(--red); font-family: 'JetBrains Mono', monospace; margin-bottom: 0.75rem;">// CURRENT FOCUS</p>
+    <div class="tool-card active-focus-card" style="border-left: 2px solid var(--red); padding: 1.5rem; background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(4px);">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+        <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem;">OverTheWire: Bandit</h3>
+        <span class="tool-tag" style="background: rgba(255, 0, 0, 0.1); color: var(--red); border: 1px solid rgba(255, 0, 0, 0.2);">ACTIVE Wargame</span>
+      </div>
+      <p style="font-size: 0.95rem; line-height: 1.5; opacity: 0.8; margin-bottom: 1.25rem;">
+        Solving Bandit and documenting every level, including core commands, structural vulnerabilities, and foundational Linux security principles.
+      </p>
+      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 1rem;">
+        <div class="progress-container">
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; margin: 0; opacity: 0.6;">PROGRESS</p>
+          <p style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; margin: 0; color: var(--red);">15 / 34 Levels Completed</p>
+        </div>
+        <a href="https://github.com/Scoder0011/Cybersecurity/blob/main/BASICS/LINUX.md#basic-to-elite" target="_blank" rel="noopener noreferrer" class="vault-cta" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #fff;">
+          <span>View Notes</span>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px;"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="recent-notes-section" style="margin-top: 3rem;">
+    <p class="wu-col-label" style="font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem;">// RECENT ENTRIES</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+      
+      <a href="https://github.com/Scoder0011/Cybersecurity/blob/main/BASICS/LINUX.md#bandit-level-14--level-15" target="_blank" rel="noopener noreferrer" class="tool-card" style="text-decoration: none; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem; transition: transform 0.2s ease, background 0.2s ease;">
+        <div>
+          <h4 style="margin: 0 0 0.25rem 0; font-family: 'Space Grotesk', sans-serif; color: #fff;">Bandit Level 14 → Level 15</h4>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.5;">Linux Basics</span>
+        </div>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px; opacity: 0.6;"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="vault-section" style="margin-top: 3rem;">
+  <p class="wu-col-label" style="font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem;">// OBSIDIAN VAULT</p>
+  <a href="https://github.com/Scoder0011/Cybersecurity" target="_blank" rel="noopener noreferrer" class="vault-card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 2rem; border: 1px solid rgba(255,255,255,0.08); background: linear-gradient(135deg, rgba(255,255,255,0.01) 0%, rgba(255,0,0,0.02) 100%); text-decoration: none;">
+    <div class="vault-card-main">
+      <p class="vault-label" style="color: var(--red); font-weight: bold; margin-bottom: 0.25rem;">// vault</p>
+      <h2 class="vault-title" style="font-size: 2rem; margin-top: 0; font-family: 'Space Grotesk', sans-serif; color: #fff;">Cybersecurity</h2>
+      <p class="vault-desc" style="max-width: 600px; opacity: 0.8; margin-bottom: 2.5rem; font-size: 1rem; color: #ccc;">
+        Raw, unedited markdown files synchronized straight from my primary local Obsidian workspace. A complete mind-map of theoretical vectors and step-by-step payloads.
+      </p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+        
+        <div>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--red); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">[0x01] Basics</p>
+          <ul style="padding-left: 0; list-style: none; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+            <li style="opacity: 0.85; color: #fff;">&bull; Linux (Current)</li>
+            <li style="opacity: 0.85; color: #fff;">&bull; Networking</li>
+            <li style="opacity: 0.85; color: #fff;">&bull; Python</li>
+          </ul>
+        </div>
+
+        <div>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--red); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">[0x02] Mid</p>
+          <ul style="padding-left: 0; list-style: none; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+            <li style="opacity: 0.85; color: #fff;">&bull; Cryptography</li>
+            <li style="opacity: 0.85; color: #fff;">&bull; Scripting</li>
+            <li style="opacity: 0.85; color: #fff;">&bull; Web Security</li>
+          </ul>
+        </div>
+
+        <div>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--red); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">[0x03] Advance</p>
+          <ul style="padding-left: 0; list-style: none; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+            <li style="opacity: 0.85; color: #fff;">&bull; General Pentest</li>
+            <li style="opacity: 0.85; color: #fff;">&bull; Red Teaming Operations</li>
+          </ul>
+        </div>
+
+        <div>
+          <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--red); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">[0x04] Elite</p>
+          <ul style="padding-left: 0; list-style: none; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+            <li style="opacity: 0.85; color: #fff;">&bull; Embedded & Hardware Sec</li>
+            <li style="opacity: 0.85; color: #fff;">&bull; OT / ICS Security</li>
+            <li style="opacity: 0.85; color: #fff;">&bull; RF & Satellite Security</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="vault-cta" style="margin-top: 2.5rem; display: flex; align-items: center; gap: 0.5rem; justify-content: flex-end; color: var(--red);">
+      <span style="font-family: 'JetBrains Mono', monospace; font-weight: bold;">Open Repository</span>
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </a>
+</section>
+
+  <p class="page-note" style="margin-top:32px; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 1.5rem;">
+    Structured writeups on validated findings still live under
+    <a href="writeups.html" style="color:var(--red); text-decoration: none; border-bottom: 1px dashed var(--red);">writeups</a> and
+    <a href="bbp.html" style="color:var(--red); text-decoration: none; border-bottom: 1px dashed var(--red);">bbp</a> — the vault is where the raw thinking operates.
+  </p>
+  <a href="index.html" class="page-corner-logo" aria-label="Back to home">
+    <img src="hero-graphic.png" alt="" />
+  </a>
+</main>
+
+<nav class="dock" role="navigation" aria-label="Section navigation">
+  <ul class="dock-list">
+    <li class="dock-item" data-target="home"><a href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10L12 4L20 10V19C20 19.5523 19.5523 20 19 20H14V14H10V20H5C4.44772 20 4 19.5523 4 19V10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">home</span></li>
+    <li class="dock-item" data-target="about"><a href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L20 6M4 12H14M4 18H10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18 14L20 16L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">whoami</span></li>
+    <li class="dock-item" data-target="writeups"><a href="writeups.html" aria-label="Writeups"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H16L20 8V20H4V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 4V8H20" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 12H16M8 16H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a><span class="dock-label">loot</span></li>
+    <li class="dock-item" data-target="bbp"><a href="bbp.html" aria-label="Bug Bounty Programs"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 12L11 13.5L14.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">bbp</span></li>
+    <li class="dock-item" data-target="tools"><a href="tools.html" aria-label="Tools"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 005.4-5.4l-2.1 2.1-2-2 2.1-2.1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a><span class="dock-label">tools</span></li>
+    <li class="dock-item" data-target="notes"><a href="notes.html" aria-label="Notes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 19L9 18L18.5 8.5C19.3284 7.67157 19.3284 6.32843 18.5 5.5C17.6716 4.67157 16.3284 4.67157 15.5 5.5L6 15L5 19Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">notes</span></li>
+    <li class="dock-item" data-target="contact"><a href="contact.html" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">connect</span></li>
+  </ul>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
