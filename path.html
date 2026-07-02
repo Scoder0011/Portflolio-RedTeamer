@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learning path // sc0d3r</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .path-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .level-section {
+      border-left: 3px solid var(--red);
+      padding-left: 1.5rem;
+      padding: 1.5rem;
+      background: rgba(255, 59, 59, 0.04);
+      border-radius: 4px;
+      border-left: 3px solid var(--red);
+    }
+
+    .level-title {
+      font-family: var(--display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 0 0 1rem 0;
+      color: var(--red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 0;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skill-item {
+      background: rgba(255, 59, 59, 0.1);
+      border: 1px solid rgba(255, 59, 59, 0.3);
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-family: var(--mono);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .skill-item:hover {
+      background: rgba(255, 59, 59, 0.2);
+      border-color: var(--red);
+    }
+
+    .skill-badge {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: var(--red);
+      border-radius: 50%;
+    }
+
+    .skill-badge.current {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .kill-chain-section {
+      margin-top: 4rem;
+      padding: 2rem;
+      background: rgba(255, 59, 59, 0.05);
+      border: 1px solid rgba(255, 59, 59, 0.2);
+      border-radius: 4px;
+    }
+
+    .kill-chain-title {
+      font-family: var(--display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 0 0 1.5rem 0;
+      color: var(--red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .kill-chain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .chain-step {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 59, 59, 0.2);
+      padding: 1.5rem;
+      border-radius: 4px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .chain-step:hover {
+      background: rgba(255, 59, 59, 0.08);
+      border-color: var(--red);
+      transform: translateY(-2px);
+    }
+
+    .chain-step-number {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--red);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .chain-step-title {
+      font-family: var(--display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0.5rem 0 0.75rem 0;
+    }
+
+    .chain-step-desc {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .level-section {
+        padding: 1.2rem;
+      }
+
+      .level-title {
+        font-size: 1.2rem;
+      }
+
+      .kill-chain-title {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body data-page="path">
+
+<div id="scene-container" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="section page">
+  <a href="index.html" class="back-link">&larr; sc0d3r</a>
+  <p class="addr">0x07 :: LEARNING PATH</p>
+  <h1 class="page-title">Cybersecurity Learning Path</h1>
+  <p class="page-note">A structured roadmap from foundational concepts to advanced red team operations, culminating in real-world attack scenarios.</p>
+
+  <div class="path-grid">
+    
+    <div class="level-section">
+      <h2 class="level-title">● Level: Basic</h2>
+      <ul class="skills-list">
+        <li class="skill-item">
+          <span class="skill-badge current"></span>
+          <span><strong>LINUX</strong> (Current)</span>
+        </li>
+        <li class="skill-item">
+          <span class="skill-badge"></span>
+          <span>NETWORKING</span>
+        </li>
+        <li class="skill-item">
+          <span class="skill-badge"></span>
+          <span>BASH SCRIPTING</span>
+        </li>
+        <li class="skill-item">
+          <span class="skill-badge"></span>
+          <span>PYTHON SCRIPTING</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="level-section">
+      <h2 class="level-title">● Level: Mid</h2>
+      <ul class="skills-list">
+        <li class="skill-item">
+          <span class="skill-badge"></span>
+          <span>WINDOWS</span>
+        </li>
+        <li class="skill-item">
+          <span class="skill-badge"></span>
+          <span>WEB SECURITY</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="level-section">
+      <h2 class="level-title">● Level: Advance</h2>
+      <ul class="skills-list">
+        <li class="skill-item">
+          <span class="skill-badge"></span>
+          <span>ACTIVE DIRECTORY</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="level-section">
+      <h2 class="level-title">● Level: Elite</h2>
+      <ul class="skills-list">
+        <li class="skill-item">
+          <span class="skill-badge"></span>
+          <span>CLOUD SECURITY</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section class="kill-chain-section">
+    <h2 class="kill-chain-title">Real-World Attack Kill Chain</h2>
+    <p style="margin: 0 0 1.5rem 0; opacity: 0.8;">After mastering all skill levels, here's how it translates to a full red team operation:</p>
+    
+    <div class="kill-chain-grid">
+      <div class="chain-step">
+        <div class="chain-step-number">Phase 1</div>
+        <h3 class="chain-step-title">Reconnaissance</h3>
+        <p class="chain-step-desc">NETWORKING + Python scripting to gather intelligence, identify targets, map infrastructure, and discover attack surfaces.</p>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-step-number">Phase 2</div>
+        <h3 class="chain-step-title">Scanning & Enumeration</h3>
+        <p class="chain-step-desc">Linux + Bash scripting to automate service discovery, vulnerability scanning, and OS fingerprinting.</p>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-step-number">Phase 3</div>
+        <h3 class="chain-step-title">Initial Access</h3>
+        <p class="chain-step-desc">Web Security to exploit misconfigurations, authentication bypasses, and vulnerable APIs for entry point.</p>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-step-number">Phase 4</div>
+        <h3 class="chain-step-title">Privilege Escalation</h3>
+        <p class="chain-step-desc">Windows + Active Directory knowledge to move from low-privilege user to admin/system access.</p>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-step-number">Phase 5</div>
+        <h3 class="chain-step-title">Lateral Movement</h3>
+        <p class="chain-step-desc">Active Directory + Python automation to pivot across systems and compromise multiple machines in the domain.</p>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-step-number">Phase 6</div>
+        <h3 class="chain-step-title">Data Exfiltration</h3>
+        <p class="chain-step-desc">Cloud Security + Networking to identify sensitive data, establish command & control, and extract to external servers.</p>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-step-number">Phase 7</div>
+        <h3 class="chain-step-title">Persistence</h3>
+        <p class="chain-step-desc">Windows + Linux techniques to maintain access via backdoors, scheduled tasks, or rootkits for long-term control.</p>
+      </div>
+
+      <div class="chain-step">
+        <div class="chain-step-number">Phase 8</div>
+        <h3 class="chain-step-title">Cover Tracks</h3>
+        <p class="chain-step-desc">Bash + Linux log manipulation to erase evidence, disable auditing, and avoid detection from SOC teams.</p>
+      </div>
+    </div>
+  </section>
+
+  <a href="index.html" class="page-corner-logo" aria-label="Back to home">
+    <img src="hero-graphic.png" alt="" />
+  </a>
+</main>
+
+<nav class="dock" role="navigation" aria-label="Section navigation">
+  <ul class="dock-list">
+    <li class="dock-item" data-target="home"><a href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10L12 4L20 10V19C20 19.5523 19.5523 20 19 20H14V14H10V20H5C4.44772 20 4 19.5523 4 19V10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">home</span></li>
+    <li class="dock-item" data-target="about"><a href="about.html" aria-label="About"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L20 6M4 12H14M4 18H10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18 14L20 16L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">whoami</span></li>
+    <li class="dock-item" data-target="writeups"><a href="writeups.html" aria-label="Writeups"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H16L20 8V20H4V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 4V8H20" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 12H16M8 16H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a><span class="dock-label">loot</span></li>
+    <li class="dock-item" data-target="bbp"><a href="bbp.html" aria-label="Bug Bounty Programs"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 12L11 13.5L14.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">bbp</span></li>
+    <li class="dock-item" data-target="tools"><a href="tools.html" aria-label="Tools"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 005.4-5.4l-2.1 2.1-2-2 2.1-2.1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a><span class="dock-label">tools</span></li>
+    <li class="dock-item" data-target="notes"><a href="notes.html" aria-label="Notes"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 19L9 18L18.5 8.5C19.3284 7.67157 19.3284 6.32843 18.5 5.5C17.6716 4.67157 16.3284 4.67157 15.5 5.5L6 15L5 19Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">notes</span></li>
+    <li class="dock-item" data-target="path"><a href="path.html" aria-label="Learning Path"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V7M3 7H21M3 7V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V7M8 11H8.01M12 11H12.01M16 11H16.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><span class="dock-label">path</span></li>
+    <li class="dock-item" data-target="contact"><a href="contact.html" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a><span class="dock-label">connect</span></li>
+  </ul>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
