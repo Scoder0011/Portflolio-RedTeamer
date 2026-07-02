@@ -18,46 +18,86 @@
   <a href="index.html" class="back-link">&larr; sc0d3r</a>
   <p class="addr">0x02 :: LOOT</p>
   <h1 class="page-title">Writeups &amp; Challenges</h1>
-  <p class="page-note">Things I've built for others to break, and things I've broken myself.</p>
+  <p class="page-note">Challenge builds, comp runs, and the sharp little scars left behind by solving under pressure.</p>
+
+  <div class="wu-overview">
+    <article class="wu-stat">
+      <span class="wu-stat-label">Built</span>
+      <strong class="wu-stat-value">7+</strong>
+      <p class="wu-stat-copy">Web and forensics challenges designed to make people slow down and think.</p>
+    </article>
+    <article class="wu-stat">
+      <span class="wu-stat-label">Competed</span>
+      <strong class="wu-stat-value">4</strong>
+      <p class="wu-stat-copy">University and public CTF events with a mix of fast pivots and longer grinds.</p>
+    </article>
+    <article class="wu-stat">
+      <span class="wu-stat-label">Focus</span>
+      <strong class="wu-stat-value">Web / DFIR</strong>
+      <p class="wu-stat-copy">Most of the work here leans into web exploitation, challenge authoring, and forensics.</p>
+    </article>
+  </div>
 
   <div class="wu-columns">
     <div class="wu-col">
-      <p class="wu-col-label">Built — Challanges</p>
+      <p class="wu-col-label">Built — Challenges</p>
       <div class="wu-list">
         <article class="wu-card">
-          <h3>Micro-Slop</h3>
-          <p class="wu-meta">web</p>
+          <div class="wu-head">
+            <h3>Micro-Slop</h3>
+            <span class="wu-badge">web</span>
+          </div>
+          <p>A web challenge built around messy logic and deliberate noise, rewarding patient enumeration over rushed guessing.</p>
         </article>
         <article class="wu-card">
-          <h3>Flappy Bird JWT</h3>
-          <p class="wu-meta">web </p>
+          <div class="wu-head">
+            <h3>Flappy Bird JWT</h3>
+            <span class="wu-badge">web</span>
+          </div>
+          <p>Token handling and trust assumptions wrapped in a playful surface so the real flaw feels a step behind the obvious one.</p>
         </article>
         <article class="wu-card">
-          <h3>Divine Access 1 & 2 </h3>
-          <p class="wu-meta">web </p>
+          <div class="wu-head">
+            <h3>Divine Access 1 &amp; 2</h3>
+            <span class="wu-badge">web</span>
+          </div>
+          <p>A staged pair of web tasks that escalate access gradually instead of handing the full path away on the first bug.</p>
         </article>
         <article class="wu-card">
-          <h3>Palette</h3>
-          <p class="wu-meta">web </p>
-        </article>
-         <article class="wu-card">
-          <h3> Forgotten</h3>
-          <p class="wu-meta">forensics </p>
-        </article>
-         <article class="wu-card">
-          <h3>Warped</h3>
-          <p class="wu-meta">forensics </p>
+          <div class="wu-head">
+            <h3>Palette</h3>
+            <span class="wu-badge">web</span>
+          </div>
+          <p>Built to reward close inspection of user-controlled input and the assumptions hidden behind polished UI flow.</p>
         </article>
         <article class="wu-card">
-          <h3>Cheat Report</h3>
-          <p class="wu-meta">forensics </p>
+          <div class="wu-head">
+            <h3>Forgotten</h3>
+            <span class="wu-badge">forensics</span>
+          </div>
+          <p>A forensic recovery challenge that leans on overlooked traces and the kind of artifacts people usually ignore first.</p>
         </article>
         <article class="wu-card">
-          <h3>Deleted 6 Challanges From Github</h3>
-          <p class="wu-meta">Racoon City </p>
-          <p class="wu-meta">Sad :( </p>
+          <div class="wu-head">
+            <h3>Warped</h3>
+            <span class="wu-badge">forensics</span>
+          </div>
+          <p>Designed to distort the obvious trail and force players to validate every assumption before committing to an answer.</p>
         </article>
-        
+        <article class="wu-card">
+          <div class="wu-head">
+            <h3>Cheat Report</h3>
+            <span class="wu-badge">forensics</span>
+          </div>
+          <p>A report-driven investigation challenge focused on piecing intent, timeline, and evidence into one clean narrative.</p>
+        </article>
+        <article class="wu-card">
+          <div class="wu-head">
+            <h3>Deleted 6 Challenges From GitHub</h3>
+            <span class="wu-badge">Raccoon City</span>
+          </div>
+          <p>Lost challenge set. Painful cleanup, but still part of the story and worth keeping on the board.</p>
+        </article>
       </div>
     </div>
 
@@ -65,26 +105,36 @@
       <p class="wu-col-label">Solved — Competition</p>
       <div class="wu-list">
         <article class="wu-card">
-          <h3>CYCOG-0x01</h3>
-          <p class="wu-meta">Univeristy CTF</p>
-          <p>Rank 113</p>
+          <div class="wu-head">
+            <h3>CYCOG-0x01</h3>
+            <span class="wu-badge">university ctf</span>
+          </div>
+          <p class="wu-rank">Rank 113</p>
+          <p>Early comp run with solid lessons in pace, triage, and not overcommitting to a dead path too fast.</p>
         </article>
-         <article class="wu-card">
+        <article class="wu-card">
+          <div class="wu-head">
           <h3>CYCOG-0x02</h3>
-          <p class="wu-meta">Univeristy CTF</p>
-          <p>Rank 24</p>
+            <span class="wu-badge">university ctf</span>
+          </div>
+          <p class="wu-rank">Rank 24</p>
+          <p>A much stronger showing with better challenge selection and cleaner execution under time pressure.</p>
         </article>
-        </article>
-         <article class="wu-card">
+        <article class="wu-card">
+          <div class="wu-head">
           <h3>Hack or Crack 2.0</h3>
-          <p class="wu-meta">Univeristy CTF</p>
-          <p></p>
+            <span class="wu-badge">university ctf</span>
+          </div>
+          <p class="wu-rank">Competition Run</p>
+          <p>A grind-heavy event that helped sharpen consistency more than flashy last-minute solves.</p>
         </article>
-        </article>
-         <article class="wu-card">
+        <article class="wu-card">
+          <div class="wu-head">
           <h3>boroCTF</h3>
-          <p class="wu-meta">WorldWide CTF </p>
-          <p>Rank 65 /665-Team -- Open Division</p>
+            <span class="wu-badge">worldwide ctf</span>
+          </div>
+          <p class="wu-rank">Rank 65 / 665 Teams</p>
+          <p>Open division finish that reflects strong adaptation against a larger and more competitive field.</p>
         </article>
       </div>
     </div>
