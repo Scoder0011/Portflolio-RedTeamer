@@ -1,177 +1,371 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>sc0d3r // red team operator</title>
-<meta name="description" content="sc0d3r — red teamer, CTF architect, bug bounty hunter.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body data-page="home" class="has-hero">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sc0d3r // red team operator</title>
+    <meta
+      name="description"
+      content="sc0d3r — red teamer, CTF architect, bug bounty hunter."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home" class="has-hero">
+    <div id="scene-container" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="hero-fade" aria-hidden="true"></div>
 
-<div id="scene-container" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
-<div class="hero-fade" aria-hidden="true"></div>
-
-<main class="section hero">
-  <div class="hero-logo-wrapper">
-    <img class="hero-logo" src="hero-graphic.png" alt="Red teamer logo" />
-  </div>
-  <div class="hero-stage">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <span class="hero-hello glitch-text glitch-matrix" data-default="𝔰𝔠0𝔡3𝔯" data-hover="𝕊𝕌ℝ𝔸𝕁 ℂℍ𝔸𝕌ℍ𝔸ℕ">sc0d3r</span>
-        <p class="hero-intro">Sup, I'm Suraj — an 18-year-old who's obsessed with computers, the internet, and hacking. I'm always breaking things, building them back, and figuring out how they work.</p>
+    <main class="section hero">
+      <div class="hero-logo-wrapper">
+        <img class="hero-logo" src="hero-graphic.png" alt="Red teamer logo" />
       </div>
-      <p class="hero-desc">
-    I don't just use computers — I like understanding them. Whether it's Linux, web security, CTFs, or building projects, I'm always exploring what's happening behind the scenes.
-  </p>
-      <div class="hero-tags">
-    <span class="tag">RedTeam Ops</span>
-    <span class="tag">Bare-Metal Linux</span>
-    <span class="tag">CTF Player</span>
-    <span class="tag">Challenge Creator</span>
-    <span class="tag">Bug Bounty Hunter</span>
-    <span class="tag">Web Pentester</span>
-    <span class="tag">Srcipting</span>
-    <span class="tag">Networking</span>
-    <span class="tag">Open Source</span>
-    <span class="tag">Active Direc</span>
-    <span class="tag">Cloud Sec</span>
-  </div>
-    </div>
-    <aside class="hero-side-card" aria-label="Hire me">
-      <p class="hero-side-kicker">Fast Track</p>
-      <h2>Hire Me ASAP</h2>
-      <p class="hero-side-copy">Catch me early or miss your shot at the best of the best. Need someone who can think like an attacker, move fast, and still stay sharp under pressure?</p>
-      <a class="hero-side-cta" href="contact.html">Hire Me</a>
-      <p class="hero-side-note">Serious builders, teams, and opportunities only.</p>
-    </aside>
+      <div class="hero-stage">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <span
+              class="hero-hello glitch-text glitch-matrix"
+              data-default="𝔰𝔠0𝔡3𝔯"
+              data-hover="𝕊𝕌ℝ𝔸𝕁 ℂℍ𝔸𝕌ℍ𝔸ℕ"
+              >sc0d3r</span
+            >
+            <p class="hero-intro">
+              Sup, I'm Suraj — an 18-year-old who's obsessed with computers, the
+              internet, and hacking. I'm always breaking things, building them
+              back, and figuring out how they work.
+            </p>
+          </div>
+          <p class="hero-desc">
+            I don't just use computers — I like understanding them. Whether it's
+            Linux, web security, CTFs, or building projects, I'm always
+            exploring what's happening behind the scenes.
+          </p>
+          <div class="hero-tags">
+            <span class="tag">RedTeam Ops</span>
+            <span class="tag">Bare-Metal Linux</span>
+            <span class="tag">CTF Player</span>
+            <span class="tag">Challenge Creator</span>
+            <span class="tag">Bug Bounty Hunter</span>
+            <span class="tag">Web Pentester</span>
+            <span class="tag">Srcipting</span>
+            <span class="tag">Networking</span>
+            <span class="tag">Open Source</span>
+            <span class="tag">Active Direc</span>
+            <span class="tag">Cloud Sec</span>
+          </div>
+        </div>
+        <aside class="hero-side-card" aria-label="Hire me">
+          <p class="hero-side-kicker">Fast Track</p>
+          <h2>Hire Me ASAP</h2>
+          <p class="hero-side-copy">
+            Catch me early or miss your shot at the best of the best. Need
+            someone who can think like an attacker, move fast, and still stay
+            sharp under pressure?
+          </p>
+          <a class="hero-side-cta" href="contact.html">Hire Me</a>
+          <p class="hero-side-note">
+            Serious builders, teams, and opportunities only.
+          </p>
+        </aside>
+      </div>
 
-  </div>
-
-  <section class="network"> 
-    <div class="section-header">
-        <h2>View Profiles</h2>
-    </div>
-    <div class="network-grid">
-
-        <a href="https://profile.hackthebox.com/profile/019dc00d-6c51-72f0-8766-0b4dedf74366" target="_blank" class="network-card">
-            <img src="hackthebox.png" alt="Hack The Box">
+      <section class="network">
+        <div class="section-header">
+          <h2>View Profiles</h2>
+        </div>
+        <div class="network-grid">
+          <a
+            href="https://profile.hackthebox.com/profile/019dc00d-6c51-72f0-8766-0b4dedf74366"
+            target="_blank"
+            class="network-card"
+          >
+            <img src="hackthebox.png" alt="Hack The Box" />
             <div class="network-info">
-                <h3>Hack The Box</h3>
-                <span>Labs • Machines • Sherlocks</span>
+              <h3>Hack The Box</h3>
+              <span>Labs • Machines • Sherlocks</span>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+          </a>
 
-        <a href="https://tryhackme.com/p/scoder0011" target="_blank" class="network-card">
-            <img src="tryhackem.png" alt="TryHackMe">
+          <a
+            href="https://tryhackme.com/p/scoder0011"
+            target="_blank"
+            class="network-card"
+          >
+            <img src="tryhackem.png" alt="TryHackMe" />
             <div class="network-info">
-                <h3>TryHackMe</h3>
-                <span>Learning Paths • Rooms</span>
+              <h3>TryHackMe</h3>
+              <span>Learning Paths • Rooms</span>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+          </a>
 
-        <a href="https://learn.cylabacademy.org/users/sc0d3r" target="_blank" class="network-card">
-            <img src="picoctf.png" alt="picoCTF">
+          <a
+            href="https://learn.cylabacademy.org/users/sc0d3r"
+            target="_blank"
+            class="network-card"
+          >
+            <img src="picoctf.png" alt="picoCTF" />
             <div class="network-info">
-                <h3>picoCTF</h3>
-                <span>Challenges • Scoreboard</span>
+              <h3>picoCTF</h3>
+              <span>Challenges • Scoreboard</span>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+          </a>
 
-        <a href="https://ctftime.org/team/435349" target="_blank" class="network-card">
-            <img src="ctftime.webp" alt="CTFtime">
+          <a
+            href="https://ctftime.org/team/435349"
+            target="_blank"
+            class="network-card"
+          >
+            <img src="ctftime.webp" alt="CTFtime" />
             <div class="network-info">
-                <h3>CTFtime</h3>
-                <span>Competition History</span>
+              <h3>CTFtime</h3>
+              <span>Competition History</span>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+          </a>
 
-        <a href="https://github.com/Scoder0011" target="_blank" class="network-card">
-            <img src="github.jpg" alt="GitHub">
+          <a
+            href="https://github.com/Scoder0011"
+            target="_blank"
+            class="network-card"
+          >
+            <img src="github.jpg" alt="GitHub" />
             <div class="network-info">
-                <h3>GitHub</h3>
-                <span>Projects • Tools • Writeups</span>
+              <h3>GitHub</h3>
+              <span>Projects • Tools • Writeups</span>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+          </a>
 
-        <a href="https://hackerone.com/s_coder?type=user" target="_blank" class="network-card">
-            <img src="hacker1.webp" alt="HackerOne">
+          <a
+            href="https://hackerone.com/s_coder?type=user"
+            target="_blank"
+            class="network-card"
+          >
+            <img src="hacker1.webp" alt="HackerOne" />
             <div class="network-info">
-                <h3>HackerOne</h3>
-                <span>Bug Bounty Profile</span>
+              <h3>HackerOne</h3>
+              <span>Bug Bounty Profile</span>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+          </a>
+        </div>
+      </section>
+    </main>
 
-    </div>
-</section>
-</main>
+    <nav class="dock" role="navigation" aria-label="Section navigation">
+      <ul class="dock-list">
+        <li class="dock-item" data-target="home">
+          <a href="index.html" aria-label="Home">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 10L12 4L20 10V19C20 19.5523 19.5523 20 19 20H14V14H10V20H5C4.44772 20 4 19.5523 4 19V10Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="dock-label">home</span>
+        </li>
+        <li class="dock-item" data-target="about">
+          <a href="about.html" aria-label="About">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6L20 6M4 12H14M4 18H10"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+              <path
+                d="M18 14L20 16L18 18"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="dock-label">whoami</span>
+        </li>
+        <li class="dock-item" data-target="writeups">
+          <a href="writeups.html" aria-label="Writeups">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 4H16L20 8V20H4V4Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16 4V8H20"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 12H16M8 16H13"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+          <span class="dock-label">loot</span>
+        </li>
+        <li class="dock-item" data-target="bbp">
+          <a href="bbp.html" aria-label="Bug Bounty Programs">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.5 12L11 13.5L14.5 10"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="dock-label">bbp</span>
+        </li>
+        <li class="dock-item" data-target="tools">
+          <a href="tools.html" aria-label="Tools">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 005.4-5.4l-2.1 2.1-2-2 2.1-2.1z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="dock-label">tools</span>
+        </li>
+        <li class="dock-item" data-target="notes">
+          <a href="notes.html" aria-label="Notes">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 19L9 18L18.5 8.5C19.3284 7.67157 19.3284 6.32843 18.5 5.5C17.6716 4.67157 16.3284 4.67157 15.5 5.5L6 15L5 19Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="dock-label">notes</span>
+        </li>
+        <li class="dock-item" data-target="blog">
+          <a href="blog.html" aria-label="Daily Log"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 4H15L19 8V20H6V4Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15 4V8H19"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9 12.5H16M9 15.5H16M9 18.5H13"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+              <circle cx="9" cy="12.5" r="0.6" fill="currentColor" /></svg></a
+          ><span class="dock-label">log</span>
+        </li>
+        <li class="dock-item" data-target="path">
+          <a href="path.html" aria-label="Learning Path">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V7M3 7H21M3 7V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V7M8 11H8.01M12 11H12.01M16 11H16.01"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="dock-label">path</span>
+        </li>
+        <li class="dock-item" data-target="contact">
+          <a href="contact.html" aria-label="Contact">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="4"
+                y="6"
+                width="16"
+                height="12"
+                rx="1"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path
+                d="M4 7L12 13L20 7"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <span class="dock-label">connect</span>
+        </li>
+      </ul>
+    </nav>
 
-<nav class="dock" role="navigation" aria-label="Section navigation">
-  <ul class="dock-list">
-    <li class="dock-item" data-target="home">
-      <a href="index.html" aria-label="Home">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10L12 4L20 10V19C20 19.5523 19.5523 20 19 20H14V14H10V20H5C4.44772 20 4 19.5523 4 19V10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="dock-label">home</span>
-    </li>
-    <li class="dock-item" data-target="about">
-      <a href="about.html" aria-label="About">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L20 6M4 12H14M4 18H10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18 14L20 16L18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="dock-label">whoami</span>
-    </li>
-    <li class="dock-item" data-target="writeups">
-      <a href="writeups.html" aria-label="Writeups">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H16L20 8V20H4V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 4V8H20" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 12H16M8 16H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-      </a>
-      <span class="dock-label">loot</span>
-    </li>
-    <li class="dock-item" data-target="bbp">
-      <a href="bbp.html" aria-label="Bug Bounty Programs">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 12L11 13.5L14.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="dock-label">bbp</span>
-    </li>
-    <li class="dock-item" data-target="tools">
-      <a href="tools.html" aria-label="Tools">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 005.4-5.4l-2.1 2.1-2-2 2.1-2.1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="dock-label">tools</span>
-    </li>
-    <li class="dock-item" data-target="notes">
-      <a href="notes.html" aria-label="Notes">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 19L9 18L18.5 8.5C19.3284 7.67157 19.3284 6.32843 18.5 5.5C17.6716 4.67157 16.3284 4.67157 15.5 5.5L6 15L5 19Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="dock-label">notes</span>
-    </li>
-    <li class="dock-item" data-target="blog"><a href="blog.html" aria-label="Daily Log"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 4H15L19 8V20H6V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 4V8H19" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12.5H16M9 15.5H16M9 18.5H13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="9" cy="12.5" r="0.6" fill="currentColor"/></svg></a><span class="dock-label">log</span></li>
-    <li class="dock-item" data-target="path">
-      <a href="path.html" aria-label="Learning Path">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V7M3 7H21M3 7V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V7M8 11H8.01M12 11H12.01M16 11H16.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="dock-label">path</span>
-    </li>
-    <li class="dock-item" data-target="contact">
-      <a href="contact.html" aria-label="Contact">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M4 7L12 13L20 7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      </a>
-      <span class="dock-label">connect</span>
-    </li>
-  </ul>
-</nav>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="script.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
